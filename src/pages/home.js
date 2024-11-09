@@ -1,9 +1,12 @@
 import React from 'react';
+import Navigation from '../components/Navigation/Navigation';
 
 function home() {
-  return (
-    <div>HomePage is my home page22332</div>
-  )
+    return (
+        <>
+            <Navigation />
+        </>
+    )
 }
 
 export default home;
