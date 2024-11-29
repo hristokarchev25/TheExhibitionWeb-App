@@ -1,8 +1,11 @@
 import React from 'react'
-
+import Navigation from '../components/Navigation/Navigation';
 function suzannePage() {
   return (
-    <div>suzannePage</div>
+    <>
+      <Navigation />
+      <div>Suzanne page</div>
+    </>
   )
 }
 

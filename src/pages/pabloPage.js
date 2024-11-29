@@ -1,8 +1,12 @@
 import React from 'react'
+import Navigation from '../components/Navigation/Navigation';
 
 function pabloPage() {
   return (
-    <div>pabloPage</div>
+    <>
+      <Navigation />
+      <div>Pablo page</div>
+    </>
   )
 }
 

@@ -1,8 +1,12 @@
 import React from 'react'
+import Navigation from '../components/Navigation/Navigation';
 
 function joanPage() {
   return (
-    <div>joanPage</div>
+    <>
+      <Navigation />
+      <div>Miro page</div>
+    </>
   )
 }
 
