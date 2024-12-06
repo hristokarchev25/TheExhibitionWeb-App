@@ -7,7 +7,7 @@ function Footer() {
     return (
         <footer id='footer'>
             <Container fluid>
-                <div className="copyright">&copy; 2022 Corporate. All Right Reserved.</div>
+                <div className="copyright">&copy; 2024 Karcho. All Right Reserved.</div>
                 <div className="socials">
                     <ul>
                         <li><a href="https://www.facebook.com"><FaFacebook /></a></li>

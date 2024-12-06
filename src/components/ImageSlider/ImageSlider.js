@@ -31,7 +31,7 @@ var heroData = [
         id: 4,
         image: require('../../assets/img-hero4.jpg'),
         title: 'Art Shop',
-        description: 'It is the young people who interest me, and not the old dodos. If I go on working, it is for the year 2000, and for the people of tomorrow.',
+        description: 'Explore an unparalleled selection of paintings, photography, sculpture, and more by thousands of artists from around the world.',
         link: 'https://www.twitter.com',
         btnText: 'Art Shop'
     },

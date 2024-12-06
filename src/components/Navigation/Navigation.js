@@ -27,7 +27,8 @@ function Navigation() {
                             <Nav.Link href="/pabloPage">Pablo Picasso</Nav.Link>
                             <Nav.Link href="/suzannePage">Suzanne Valadon</Nav.Link>
                             <Nav.Link href="/joanPage">Joan Miro</Nav.Link>
-                            <Nav.Link href="#contactUs">Contact Us</Nav.Link>
+                            <Nav.Link href="#artShop">Art Shop</Nav.Link>
+                            <Nav.Link href="#joinUs">Join Us</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
