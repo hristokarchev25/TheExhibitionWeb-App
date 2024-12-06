@@ -6,6 +6,9 @@ import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 
+//import { IoIosMail } from "react-icons/io";
+import { FaPhone, FaLocationDot, FaMailchimp } from "react-icons/fa6";
+
 function ContactUs() {
     return (
         <section id="contact" className="block contact-block">
@@ -39,24 +42,24 @@ function ContactUs() {
             <div className='google-map'>
                 <iframe title='map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158979.46403020338!2d27.789416963749783!3d43.21193883425022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40a4538baaf3d7a1%3A0x5727941c71a58b7c!2z0JLQsNGA0L3QsA!5e0!3m2!1sbg!2sbg!4v1733502412347!5m2!1sbg!2sbg" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            {/* <Container fluid>
+            <Container fluid>
                 <div className='contact-info'>
                     <ul>
                         <li>
-                            <i className="fas fa-envelope"></i>
-                            hello@domain.com
+                            <i className="fas fa-envelope"><FaMailchimp /></i>
+                            hristokarchev25@gmail.com
                         </li>
                         <li>
-                            <i className="fas fa-phone"></i>
+                            <i className="fas fa-phone"><FaPhone /></i>
                             000-000-0000
                         </li>
                         <li>
-                            <i className="fas fa-map-marker-alt"></i>
-                            London, United Kingdom
+                            <i className="fas fa-map-marker-alt"><FaLocationDot /></i>
+                            Varna, Bulgaria
                         </li>
                     </ul>
                 </div>
-            </Container> */}
+            </Container>
         </section>
     )
 }

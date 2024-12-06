@@ -12,7 +12,7 @@ function Footer() {
                     <ul>
                         <li><a href="https://www.facebook.com"><FaFacebook /></a></li>
                         <li><a href="https://www.linkedin.com"><FaLinkedinIn /></a></li>
-                        <li><a href="https://www.linkedin.com"><FaInstagram /></a></li>
+                        <li><a href="https://www.instagram.com"><FaInstagram /></a></li>
                     </ul>
                 </div>
             </Container>
