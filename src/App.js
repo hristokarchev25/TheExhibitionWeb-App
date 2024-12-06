@@ -3,7 +3,7 @@ import Home from "./pages/home";
 import PabloPage from "./pages/pabloPage";
 import SuzannePage from "./pages/suzannePage";
 import JoanPage from "./pages/joanPage";
-
+import './App.css';
 
 function App() {
   return (
