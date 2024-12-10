@@ -5,26 +5,27 @@ import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
 import "./InfoSection.css";
 
-import img1 from '../../assets/img1.jpg';
 
-function InfoSection() {
+function InfoSection({
+    id,
+    nameOfPage,
+    subtitle,
+    image,
+    descriptionParahraph
+}) {
     return (
         <section className="block about-block">
-            <Container fluid>
+            <Container id={id} fluid>
                 <div className="title-holder">
-                    <h2 id='info-header'>Info Us</h2>
-                    <div className="subtitle">learn more this mf</div>
+                    <h2 id='info-header'>{nameOfPage}</h2>
+                    <div className="subtitle">{subtitle}</div>
                 </div>
                 <Row>
                     <Col sm={6}>
-                        <Image src={img1} />
+                        <Image src={image} />
                     </Col>
                     <Col className='info-paragraph' sm={6}>
-                        <p>“At The Exhibition Web App, we make it our mission to help you discover
-                            buy from the best emerging artists around the world.
-                            Whether you’re looking to discover a new artist, add a statement piece to your home,
-                            or commemorate an important life event, The Exhibition Web App is your portal to thousands of original works by today’s top artists.”
-                        </p>
+                        <p>{descriptionParahraph}</p>
                     </Col>
                 </Row>
             </Container>
