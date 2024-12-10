@@ -8,7 +8,7 @@ var heroData = [
         image: require('../../assets/img-hero1.jpg'),
         title: 'Pablo Picasso',
         description: 'Every child is an artist. The problem is how to remain an artist once he grows up.',
-        link: 'https://www.google.com',
+        link: '/pabloPage',
         btnText: 'Learn More'
     },
     {
@@ -16,7 +16,7 @@ var heroData = [
         image: require('../../assets/img-hero2.jpg'),
         title: 'Suzanne Valadon',
         description: 'I had great masters. I took the best of them of their teachings, of their examples. I found myself, I made myself, and I said what I had to say.',
-        link: 'https://www.facebook.com',
+        link: '/suzannePage',
         btnText: 'Learn More'
     },
     {
@@ -24,7 +24,7 @@ var heroData = [
         image: require('../../assets/img-hero3.jpg'),
         title: 'Joan Miró',
         description: 'It is the young people who interest me, and not the old dodos. If I go on working, it is for the year 2000, and for the people of tomorrow.',
-        link: 'https://www.twitter.com',
+        link: '/joanPage',
         btnText: 'Learn More'
     },
     {

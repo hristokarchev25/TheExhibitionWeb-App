@@ -11,7 +11,9 @@ function InfoSection({
     nameOfPage,
     subtitle,
     image,
-    descriptionParahraph
+    descriptionParahraph,
+    descriptionParahraphTwo,
+    descriptionParahraphThree
 }) {
     return (
         <section className="block about-block">
@@ -26,6 +28,8 @@ function InfoSection({
                     </Col>
                     <Col className='info-paragraph' sm={6}>
                         <p>{descriptionParahraph}</p>
+                        <p>{descriptionParahraphTwo}</p>
+                        <p>{descriptionParahraphThree}</p>
                     </Col>
                 </Row>
             </Container>
