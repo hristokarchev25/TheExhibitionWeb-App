@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useNavigate } from "react-router";
+import { auth } from '../../utils/firebase';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -8,6 +10,16 @@ import Logo from '../../images/Logo.png';
 import "./Navigation.css";
 
 function Navigation({ email, isAuth }) {
+    let location = useNavigate();
+
+    const doSignOut = (e) => {
+        e.preventDefault()
+        auth.signOut()
+            .then(userCredential => {
+                location('/');
+            })
+            .catch(err => console.log(err));;
+    }
     return (
         <header id="header">
             <Navbar expand="lg" className="bg-body-tertiary">
@@ -35,7 +47,7 @@ function Navigation({ email, isAuth }) {
                                 ) : (
                                     <>
                                         <Nav.Link href="#"> Welcome, {email}</Nav.Link>
-                                        <Link to="/logout">Log Out</Link>
+                                        <Nav.Link href='#' onClick={doSignOut}>Log Out</Nav.Link>
                                     </>
                                 )}
                         </Nav>
