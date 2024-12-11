@@ -4,6 +4,7 @@ import PabloPage from "./pages/pabloPage";
 import SuzannePage from "./pages/suzannePage";
 import JoanPage from "./pages/joanPage";
 import JoinUs from "./components/JoinUs/JoinUs";
+import Registration from "./components/Registration/Registration";
 import './App.css';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route path="/suzannePage" element={<SuzannePage />} />
         <Route path="/joanPage" element={<JoanPage />} />
         <Route path="/joinUs" element={<JoinUs />} />
+        <Route path="/registration" element={<Registration />} />
       </Routes>
     </>
   );
