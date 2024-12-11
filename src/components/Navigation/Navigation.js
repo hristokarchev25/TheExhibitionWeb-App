@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -6,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Logo from '../../images/Logo.png';
 import "./Navigation.css";
 
-function Navigation() {
+function Navigation({ email, isAuth }) {
     return (
         <header id="header">
             <Navbar expand="lg" className="bg-body-tertiary">
@@ -23,17 +24,25 @@ function Navigation() {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link href="/">Home</Nav.Link>
+                            <Link to="/">Home</Link>
                             <Nav.Link href="/pabloPage">Pablo Picasso</Nav.Link>
                             <Nav.Link href="/suzannePage">Suzanne Valadon</Nav.Link>
                             <Nav.Link href="/joanPage">Joan Miro</Nav.Link>
                             <Nav.Link href="#artShop">Art Shop</Nav.Link>
-                            <Nav.Link href="/joinUs">Join Us</Nav.Link>
+                            {!isAuth ?
+                                (
+                                    <Nav.Link href="/joinUs">Join Us</Nav.Link>
+                                ) : (
+                                    <>
+                                        <Nav.Link href="#"> Welcome, {email}</Nav.Link>
+                                        <Link to="/logout">Log Out</Link>
+                                    </>
+                                )}
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
-        </header>
+        </header >
     )
 }
 
