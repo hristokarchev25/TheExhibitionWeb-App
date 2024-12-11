@@ -1,5 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./JoinUs.css";
+import { useNavigate } from "react-router";
+import { auth } from '../../utils/firebase';
 import joinImg from '../../assets/joinUs.png';
 import {
     MDBBtn,
@@ -15,6 +17,23 @@ import {
     from 'mdb-react-ui-kit';
 
 function JoinUs() {
+    let location = useNavigate();
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+
+    const onLoginFormSubmitHandler = (e) => {
+        e.preventDefault();
+        const email = e.target.email.value;
+        const password = e.target.password.value;
+
+
+        auth.signInWithEmailAndPassword(email, password)
+            .then((userCredential) => {
+                location('/');
+            })
+            .catch(err => console.log(err));
+    };
+
     return (
         <MDBContainer className="my-5 main-container">
 
@@ -33,12 +52,15 @@ function JoinUs() {
                                 <span className="h1 fw-bold mb-0">The Exhibition App</span>
                             </div>
 
-                            <h5 className="fw-normal my-4 pb-3" style={{ letterSpacing: '1px' }}>Sign into your account</h5>
+                            <form onSubmit={onLoginFormSubmitHandler}>
+                                <h5 className="fw-normal my-4 pb-3" style={{ letterSpacing: '1px' }}>Sign into your account</h5>
 
-                            <MDBInput className='form-label' wrapperClass='mb-4' label='Email address' id='formControlLg' type='email' size="lg" />
-                            <MDBInput className='form-label' wrapperClass='mb-4' label='Password' id='formControlLg' type='password' size="lg" />
+                                <MDBInput value={email} className='form-label' wrapperClass='mb-4' label='Email address' size="lg" type='email' id='email' onChange={(e) => { setEmail(e.target.value) }} name="email" placeholder="Type your email" required />
+                                <MDBInput value={password} className='form-label' wrapperClass='mb-4' label='Password' size="lg" type='password' id="password" onChange={(e) => { setPassword(e.target.value) }} name="password" placeholder="Password must be more than 6 symbols" required />
 
-                            <MDBBtn className="mb-4 px-5" color='primary' size='lg'>Login</MDBBtn>
+                                <MDBBtn className="mb-4 px-5" color='primary' size='lg'>Create</MDBBtn>
+                            </form>
+
                             <a className="small text-muted" href="#!">Forgot password?</a>
                             <p className="mb-5 pb-lg-2" style={{ color: '#393f81' }}>Don't have an account? <a href="/registration" style={{ color: '#393f81' }}>Register here</a></p>
 
