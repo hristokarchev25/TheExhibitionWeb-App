@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
 import "./JoinUs.css";
 import { useNavigate } from "react-router";
 import { auth } from '../../utils/firebase';
@@ -62,7 +63,7 @@ function JoinUs() {
                             </form>
 
                             <a className="small text-muted" href="#!">Forgot password?</a>
-                            <p className="mb-5 pb-lg-2" style={{ color: '#393f81' }}>Don't have an account? <a href="/registration" style={{ color: '#393f81' }}>Register here</a></p>
+                            <p className="mb-5 pb-lg-2" style={{ color: '#393f81' }}>Don't have an account? <Link to="/registration" style={{ color: '#393f81' }}>Register here</Link></p>
 
                             <div className='d-flex flex-row justify-content-center'>
                                 <a href="#!" className="small text-muted me-1">Terms of use.</a>

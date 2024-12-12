@@ -37,17 +37,17 @@ function Navigation({ email, isAuth }) {
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
                             <Link to="/">Home</Link>
-                            <Nav.Link href="/pabloPage">Pablo Picasso</Nav.Link>
-                            <Nav.Link href="/suzannePage">Suzanne Valadon</Nav.Link>
-                            <Nav.Link href="/joanPage">Joan Miro</Nav.Link>
-                            <Nav.Link href="#artShop">Art Shop</Nav.Link>
+                            <Link to="/pabloPage">Pablo Picasso</Link>
+                            <Link to="/suzannePage">Suzanne Valadon</Link>
+                            <Link to="/joanPage">Joan Miro</Link>
+                            <Link to="#artShop">Art Shop</Link>
                             {!isAuth ?
                                 (
-                                    <Nav.Link href="/joinUs">Join Us</Nav.Link>
+                                    <Link to="/joinUs">Join Us</Link>
                                 ) : (
                                     <>
-                                        <Nav.Link href="#"> Welcome, {email}</Nav.Link>
-                                        <Nav.Link href='#' onClick={doSignOut}>Log Out</Nav.Link>
+                                        <Link to="#"> Welcome, {email}</Link>
+                                        <Link to='#' onClick={doSignOut}>Log Out</Link>
                                     </>
                                 )}
                         </Nav>

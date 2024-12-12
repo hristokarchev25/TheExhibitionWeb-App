@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { auth } from '../../utils/firebase';
 import { useNavigate } from "react-router";
+import { Link } from 'react-router-dom';
 
 import joinImg from '../../assets/registration.jpg';
 import {
@@ -59,7 +60,7 @@ function Registration() {
                                 <MDBBtn className="mb-4 px-5" color='primary' size='lg'>Create</MDBBtn>
                             </form>
 
-                            <p className="mb-5 pb-lg-2" style={{ color: '#393f81' }}>Already have an account? <a href="/JoinUs" style={{ color: '#393f81' }}>Login here</a></p>
+                            <p className="mb-5 pb-lg-2" style={{ color: '#393f81' }}>Already have an account? <Link to="/JoinUs" style={{ color: '#393f81' }}>Login here</Link></p>
 
                             <div className='d-flex flex-row justify-content-center'>
                                 <a href="#!" className="small text-muted me-1">Terms of use.</a>

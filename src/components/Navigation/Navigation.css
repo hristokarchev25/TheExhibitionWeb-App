@@ -33,6 +33,7 @@
 #header .navbar-collapse .navbar-nav {
     font-size: 14px;
     line-height: 20px;
+    align-items: center;
 }
 
 #header .navbar-collapse a:last-child {
@@ -42,6 +43,7 @@
 #header .navbar-collapse a {
     color: #4d4d4d;
     position: relative;
+    padding-right: 15px
 }
 
 #header .navbar-collapse a:hover,
@@ -62,7 +64,7 @@
     background: #f64b4b;
     height: 1px;
     position: absolute;
-    bottom: 7px;
+    bottom: -2px;
     left: -20px;
     right: 100%;
     transition: all 0.3s linear;
@@ -83,6 +85,10 @@
     #header .navbar-collapse .nav-item {
         float: none;
         display: block;
+        padding: 7px 0;
+    }
+
+    #header .navbar-collapse a {
         padding: 7px 0;
     }
 
