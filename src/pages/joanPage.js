@@ -1,14 +1,22 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 import Navigation from '../components/Navigation/Navigation';
 import About from '../components/About/About';
 import InfoSection from '../components/InfoSection/InfoSection';
 import { joanObj } from '../components/InfoSection/Data';
 import Footer from '../components/Footer/Footer';
 
-function joanPage() {
+import { auth } from '../utils/firebase';
+
+function JoanPage() {
+
+  const [user, setUser] = useState(null);
+  useEffect(() => {
+    auth.onAuthStateChanged(setUser);
+  }, []);
+
   return (
     <>
-      <Navigation />
+      <Navigation email={user?.email} isAuth={Boolean(user)} />
       <InfoSection {...joanObj} />
       <About />
       <Footer />
@@ -16,4 +24,4 @@ function joanPage() {
   )
 }
 
-export default joanPage;
+export default JoanPage;

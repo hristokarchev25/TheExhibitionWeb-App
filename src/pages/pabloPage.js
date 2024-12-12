@@ -1,14 +1,22 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 import Navigation from '../components/Navigation/Navigation';
 import About from '../components/About/About';
 import InfoSection from '../components/InfoSection/InfoSection';
 import { pabloObj } from '../components/InfoSection/Data';
 import Footer from '../components/Footer/Footer';
 
-function pabloPage() {
+import { auth } from '../utils/firebase';
+
+function PabloPage() {
+
+  const [user, setUser] = useState(null);
+  useEffect(() => {
+    auth.onAuthStateChanged(setUser);
+  }, []);
+
   return (
     <>
-      <Navigation />
+      <Navigation email={user?.email} isAuth={Boolean(user)} />
       <InfoSection {...pabloObj} />
       <About />
       <Footer />
@@ -16,4 +24,4 @@ function pabloPage() {
   )
 }
 
-export default pabloPage;
+export default PabloPage;

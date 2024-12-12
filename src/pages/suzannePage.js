@@ -1,13 +1,21 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 import Navigation from '../components/Navigation/Navigation';
 import About from '../components/About/About';
 import InfoSection from '../components/InfoSection/InfoSection';
 import { suzanneObj } from '../components/InfoSection/Data';
 import Footer from '../components/Footer/Footer';
-function suzannePage() {
+
+import { auth } from '../utils/firebase';
+
+function SuzannePage() {
+  const [user, setUser] = useState(null);
+  useEffect(() => {
+    auth.onAuthStateChanged(setUser);
+  }, []);
+
   return (
     <>
-      <Navigation />
+      <Navigation email={user?.email} isAuth={Boolean(user)} />
       <InfoSection {...suzanneObj} />
       <About />
       <Footer />
@@ -15,4 +23,4 @@ function suzannePage() {
   )
 }
 
-export default suzannePage;
+export default SuzannePage;
