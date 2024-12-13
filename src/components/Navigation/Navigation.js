@@ -40,7 +40,7 @@ function Navigation({ email, isAuth }) {
                             <Link to="/pabloPage">Pablo Picasso</Link>
                             <Link to="/suzannePage">Suzanne Valadon</Link>
                             <Link to="/joanPage">Joan Miro</Link>
-                            <Link to="#artShop">Art Shop</Link>
+                            <Link to="/artShop">Art Shop</Link>
                             {!isAuth ?
                                 (
                                     <Link to="/joinUs">Join Us</Link>

@@ -1,5 +1,6 @@
 import React from 'react'
 import Carousel from 'react-bootstrap/Carousel';
+import { Link } from 'react-router-dom';
 import "./ImageSlider.css";
 
 var heroData = [
@@ -32,7 +33,7 @@ var heroData = [
         image: require('../../assets/img-hero4.jpg'),
         title: 'Art Shop',
         description: 'Explore an unparalleled selection of paintings, photography, sculpture, and more by thousands of artists from around the world.',
-        link: 'https://www.twitter.com',
+        link: '/artShop',
         btnText: 'Art Shop'
     },
 ]
@@ -53,7 +54,7 @@ function ImageSlider() {
                                 <Carousel.Caption>
                                     <h2>{hero.title}</h2>
                                     <p>{hero.description}</p>
-                                    <a className="btn btn-primary" href={hero.link}>{hero.btnText}</a>
+                                    <Link className="btn btn-primary" to={hero.link}>{hero.btnText}</Link>
                                 </Carousel.Caption>
                             </Carousel.Item>
                         );
