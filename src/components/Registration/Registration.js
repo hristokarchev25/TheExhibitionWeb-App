@@ -42,6 +42,9 @@ function Registration() {
 
             <MDBCard>
                 <MDBRow className='g-0'>
+                    <MDBCol md='6'>
+                        <MDBCardImage src={joinImg} alt="registration form" className='rounded-start w-100' />
+                    </MDBCol>
 
                     <MDBCol md='6'>
                         <MDBCardBody className='d-flex flex-column main-card'>
@@ -68,10 +71,6 @@ function Registration() {
                             </div>
 
                         </MDBCardBody>
-                    </MDBCol>
-
-                    <MDBCol md='6'>
-                        <MDBCardImage src={joinImg} alt="registration form" className='rounded-start w-100' />
                     </MDBCol>
                 </MDBRow>
             </MDBCard>

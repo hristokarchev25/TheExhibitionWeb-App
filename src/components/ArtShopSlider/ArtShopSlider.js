@@ -5,7 +5,7 @@ var heroData = [
     {
         id: 1,
         image: require('../../assets/hk22.jpg'),
-        title: 'The State of Harmony',
+        title: 'Minimalism',
         description: 'By Hristo Karchev'
     },
     {
