@@ -3,6 +3,7 @@ import joanImg from '../../assets/joan.jpg';
 import suzanneImg from '../../assets/suzanne.jpg';
 import guernicaImg from '../../assets/pg.webp';
 import farmImg from '../../assets/The-Farm.jpg';
+import adamEveImg from '../../assets/adameve.jpg';
 
 
 
@@ -48,8 +49,17 @@ export const guernicaObj = {
 export const farmObj = {
     id: 'farm',
     nameOfPage: 'The Farm',
-    subtitle: '1921-1922',
+    subtitle: '1921/1922',
     image: farmImg,
     descriptionParahraph: 'The Farm represents a brilliant amalgamation of an intense, even primitive realism with the formal vocabulary of cubism. The painting is a compendium of separate details, each carefully observed and precisely described. This detailed realism, however, is matched by a tendency to simplify forms into abstract, geometric shapes. Moreover, space in The Farm is defined by a ground plane that tilts sharply upward, while individual forms are similarly tilted, so that they sit silhouetted, parallel to the picture plane.',
     descriptionParahraphTwo: 'By the mid-1920s, Miró had abandoned the realist manner of The Farm and had created a surrealist style of automatism and abstraction. Elements from The Farm continued to appear in his work, however, and the intensity of vision found in this painting remained a standard for all of his later art.'
-}
+};
+
+export const adamAndEveObj = {
+    id: 'adam',
+    nameOfPage: 'Adam and Eve',
+    subtitle: '1909',
+    image: adamEveImg,
+    descriptionParahraph: 'This painting was made during a highly productive period for Valadon when she had just met the young André Utter. She had fallen in love again and as such felt a surge in creativity and began to paint rather than draw much more. The nearly life-sized painting depicts Valadon as Eve and Utter as Adam, the original lovers in the paradise of the Garden of Eden. The painting was originally completed without the leaves covering Utter’s genitals, but they were added later in order to avoid scandal and to enable exhibition of the work in the Salon of 1920.',
+    descriptionParahraphTwo: 'This was the first painting in which Valadon placed her subjects in an outdoor rather than interior setting. It was also the first painting exhibited by a female artist to show a nude man and woman together, and not merely any man or woman, but the artist and her lover (albeit in the guise of religious art). As Hewitt writes, “For a woman to paint a nude heterosexual couple showed extraordinary daring; it was simply not done.” The piece was audacious on a personal level too. The figures poised on the precipice of sin, with Eve/Valadon reaching for the apple, their naked bodies already entwined. Valadon may be referencing her own relationship here - that of an older woman and much younger man - he as the forbidden fruit, and she, with the confidence to take him.'
+};
