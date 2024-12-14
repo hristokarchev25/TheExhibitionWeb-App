@@ -1,7 +1,8 @@
 import pabloImg from '../../assets/pablo.jpg';
 import joanImg from '../../assets/joan.jpg';
-import suzanneImg from '../../assets/suzanne.jpg'
-//import img1 from '../../assets/img1.jpg';
+import suzanneImg from '../../assets/suzanne.jpg';
+import guernicaImg from '../../assets/pg.webp';
+import farmImg from '../../assets/The-Farm.jpg';
 
 
 
@@ -33,4 +34,22 @@ export const joanObj = {
     descriptionParahraph: 'Born in 1893, Joan Miró was a famous, Spanish Catalan artist. He did works in sculpture, painting, and worked as a ceramist. Born in the seaport city of Barcelona, much of his work was influenced by the scenic seaside town, and the distinct style that he found in thearea.  Miro\'s early art, like that of the similarly influenced Fauves and Cubists exhibited in Barcelona, was inspired by works of Vincent van Gogh and Paul Cezanne.',
     descriptionParahraphTwo: 'In 1919 Miro made his first trip to Paris, France, and thereafter he spent the winters in Paris and the summers in Montroig. His first one-man show in Paris was held in 1921 and his paintings of this period reflect cubist influences. His painting, Montroig, for example, has a frontal, geometric pattern greatly influenced by cubism.',
     descriptionParahraphThree: 'While he was in Paris, Joan Miró was introduced to Surrealism. Although Miro never joined the Surrealist circle, he collaborated with Max Ernst, one of leading Surrealist. In 1928, he exhibited with a group of renowned surrealist painters, including Salvador Dali and Rene Magritte in Paris; even though Surrealism has many influences in his work, Miro retained his own personal style, and distinct form in most of the works that he distributed and exhibited.'
-}; 
+};
+
+export const guernicaObj = {
+    id: 'guernica',
+    nameOfPage: 'Guernica',
+    subtitle: '1937',
+    image: guernicaImg,
+    descriptionParahraph: 'Cubism, with its fractured forms and multifaceted perspectives, became the hallmark of Picasso’s genius. The artist’s fascination with breaking down and reassembling reality reached its zenith with “Les Demoiselles d’Avignon” and later matured into the analytical and synthetic phases of Cubism.',
+    descriptionParahraphTwo: '“Guernica.” Painted in the year 1937 as a response to the horrors of the Spanish Civil War, this colossal canvas stands as a testament to Picasso’s unwavering commitment to activism. Imagine the brush as a bullfighter’s cape, swirling through the air to expose the brutality of war. The dimensions in Guernica could house a mini-fiesta and the location. Madrid was the perfect stage for this artistic rebellion.'
+};
+
+export const farmObj = {
+    id: 'farm',
+    nameOfPage: 'The Farm',
+    subtitle: '1921-1922',
+    image: farmImg,
+    descriptionParahraph: 'The Farm represents a brilliant amalgamation of an intense, even primitive realism with the formal vocabulary of cubism. The painting is a compendium of separate details, each carefully observed and precisely described. This detailed realism, however, is matched by a tendency to simplify forms into abstract, geometric shapes. Moreover, space in The Farm is defined by a ground plane that tilts sharply upward, while individual forms are similarly tilted, so that they sit silhouetted, parallel to the picture plane.',
+    descriptionParahraphTwo: 'By the mid-1920s, Miró had abandoned the realist manner of The Farm and had created a surrealist style of automatism and abstraction. Elements from The Farm continued to appear in his work, however, and the intensity of vision found in this painting remained a standard for all of his later art.'
+}

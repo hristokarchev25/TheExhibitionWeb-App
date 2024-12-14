@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Navigation from '../components/Navigation/Navigation';
-import About from '../components/About/About';
 import InfoSection from '../components/InfoSection/InfoSection';
-import { joanObj } from '../components/InfoSection/Data';
+import { joanObj, farmObj } from '../components/InfoSection/Data';
 import Footer from '../components/Footer/Footer';
 
 import { auth } from '../utils/firebase';
@@ -18,7 +17,7 @@ function JoanPage() {
     <>
       <Navigation email={user?.email} isAuth={Boolean(user)} />
       <InfoSection {...joanObj} />
-      <About />
+      <InfoSection {...farmObj} />
       <Footer />
     </>
   )
