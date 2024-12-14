@@ -7,6 +7,8 @@ import ArtShopPage from "./pages/ArtShopPage";
 import JoinUs from "./components/JoinUs/JoinUs";
 import Registration from "./components/Registration/Registration";
 import PabloDetailsPage from "./pages/PabloDetailsPage";
+import SuzanneDetailsPage from "./pages/SuzanneDetailsPage";
+import JoanDetailsPage from "./pages/JoanDetailsPage";
 import './App.css';
 
 function App() {
@@ -21,6 +23,8 @@ function App() {
         <Route path="/joinUs" element={<JoinUs />} />
         <Route path="/registration" element={<Registration />} />
         <Route path="/pabloPage/pabloCollection/:pabloId" element={<PabloDetailsPage />} />
+        <Route path="/suzannePage/suzanneCollection/:suzanneId" element={<SuzanneDetailsPage />} />
+        <Route path="/joanPage/joanCollection/:joanId" element={<JoanDetailsPage />} />
       </Routes>
     </>
   );

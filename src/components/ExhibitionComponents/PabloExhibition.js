@@ -43,7 +43,7 @@ function PabloExhibition() {
                                     <div class="fw-bold">{post.nameOfPaintings}</div>
                                     <div class="fw-bold">Year of Completion: {post.year}</div>
                                     <div class="mt-3">
-                                        <Link to={`/pabloPage/pabloCollection/${post.key}`} class="btn btn-primary">More Info</Link>
+                                        <Link to={`/pabloPage/pabloCollection/${post.key}`} class="btn btn-primary">Read More</Link>
                                     </div>
                                 </div>
                             </div>
