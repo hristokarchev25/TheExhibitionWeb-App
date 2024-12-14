@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Navigation from '../components/Navigation/Navigation';
 import InfoSection from '../components/InfoSection/InfoSection';
 import { suzanneObj, adamAndEveObj } from '../components/InfoSection/Data';
+import SuzanneExhibition from '../components/ExhibitionComponents/SuzanneExhibition';
 import Footer from '../components/Footer/Footer';
 
 import { auth } from '../utils/firebase';
@@ -17,6 +18,7 @@ function SuzannePage() {
       <Navigation email={user?.email} isAuth={Boolean(user)} />
       <InfoSection {...suzanneObj} />
       <InfoSection {...adamAndEveObj} />
+      <SuzanneExhibition />
       <Footer />
     </>
   )
