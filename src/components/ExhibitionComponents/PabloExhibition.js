@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from 'react-router-dom';
 import { db } from '../../utils/firebase';
 
 function PabloExhibition() {
@@ -42,7 +43,7 @@ function PabloExhibition() {
                                     <div class="fw-bold">{post.nameOfPaintings}</div>
                                     <div class="fw-bold">Year of Completion: {post.year}</div>
                                     <div class="mt-3">
-                                        <a href={post.key} class="btn btn-primary">View Options</a>
+                                        <Link to={`/pabloPage/pabloCollection/${post.key}`} class="btn btn-primary">More Info</Link>
                                     </div>
                                 </div>
                             </div>

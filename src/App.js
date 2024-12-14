@@ -6,6 +6,7 @@ import JoanPage from "./pages/joanPage";
 import ArtShopPage from "./pages/ArtShopPage";
 import JoinUs from "./components/JoinUs/JoinUs";
 import Registration from "./components/Registration/Registration";
+import PabloDetailsPage from "./pages/PabloDetailsPage";
 import './App.css';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path="/artShop" element={<ArtShopPage />} />
         <Route path="/joinUs" element={<JoinUs />} />
         <Route path="/registration" element={<Registration />} />
+        <Route path="/pabloPage/pabloCollection/:pabloId" element={<PabloDetailsPage />} />
       </Routes>
     </>
   );
