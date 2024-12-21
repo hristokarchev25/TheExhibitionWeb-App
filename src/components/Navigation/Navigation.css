@@ -43,7 +43,7 @@
 #header .navbar-collapse a {
     color: #4d4d4d;
     position: relative;
-    padding-right: 15px
+    padding-right: 15px;
 }
 
 #header .navbar-collapse a:hover,
@@ -89,13 +89,16 @@
     }
 
     #header .navbar-collapse a {
-        padding: 7px 0;
+        padding: 7px 3px;
     }
-
 }
 
 @media only screen and (max-width: 767px) {
     #header .navbar-collapse .navbar-nav {
         margin: 0;
+    }
+
+    #header .navbar-collapse a {
+        padding: 7px 0;
     }
 }

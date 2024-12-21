@@ -233,6 +233,12 @@ textarea {
     font-size: 15px;
   }
 
+
+  .row-cols-xl-4>* {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+
 }
 
 @media only screen and (max-width: 767px) {
@@ -250,5 +256,9 @@ textarea {
 
   .block {
     padding: 40px 0 10px;
+  }
+
+  .row-cols-md-3>* {
+    width: 100%;
   }
 }
