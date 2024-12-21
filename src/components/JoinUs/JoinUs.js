@@ -5,7 +5,6 @@ import { useNavigate } from "react-router";
 import { auth } from '../../utils/firebase';
 import joinImg from '../../assets/joinUs.png';
 import {
-    MDBBtn,
     MDBContainer,
     MDBCard,
     MDBCardBody,
@@ -59,7 +58,7 @@ function JoinUs() {
                                 <MDBInput value={email} className='form-label' wrapperClass='mb-4' label='Email address' size="lg" type='email' id='email' onChange={(e) => { setEmail(e.target.value) }} name="email" placeholder="Type your email" required />
                                 <MDBInput value={password} className='form-label' wrapperClass='mb-4' label='Password' size="lg" type='password' id="password" onChange={(e) => { setPassword(e.target.value) }} name="password" placeholder="Password must be more than 6 symbols" required />
 
-                                <MDBBtn className="mb-4 px-5" color='primary' size='lg'>Login</MDBBtn>
+                                <button className="button-style" >Login</button>
                             </form>
 
                             <a className="small text-muted" href="#!">Forgot password?</a>

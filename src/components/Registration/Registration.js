@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 
 import joinImg from '../../assets/registration.jpg';
 import {
-    MDBBtn,
     MDBContainer,
     MDBCard,
     MDBCardBody,
@@ -60,7 +59,7 @@ function Registration() {
                                 <MDBInput value={password} className='form-label' wrapperClass='mb-4' label='Password' size="lg" type='password' id="password" onChange={(e) => { setPassword(e.target.value) }} name="password" placeholder="Password must be more than 6 symbols" required />
                                 <MDBInput className='form-label' wrapperClass='mb-4' label='Confirm password' id='formControlLg' type='password' size="lg" placeholder="Passwords must match" required />
 
-                                <MDBBtn className="mb-4 px-5" color='primary' size='lg'>Create</MDBBtn>
+                                <button className="button-style">Create</button>
                             </form>
 
                             <p className="mb-5 pb-lg-2" style={{ color: '#393f81' }}>Already have an account? <Link to="/JoinUs" style={{ color: '#393f81' }}>Login here</Link></p>
