@@ -9,6 +9,7 @@ import Registration from "./components/Registration/Registration";
 import PabloDetailsPage from "./pages/PabloDetailsPage";
 import SuzanneDetailsPage from "./pages/SuzanneDetailsPage";
 import JoanDetailsPage from "./pages/JoanDetailsPage";
+import ShopDetailsPage from "./pages/ShopDetailsPage";
 import './App.css';
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Route path="/pabloPage/pabloCollection/:pabloId" element={<PabloDetailsPage />} />
         <Route path="/suzannePage/suzanneCollection/:suzanneId" element={<SuzanneDetailsPage />} />
         <Route path="/joanPage/joanCollection/:joanId" element={<JoanDetailsPage />} />
+        <Route path="/artShop/shopItem/:shopId" element={<ShopDetailsPage />} />
       </Routes>
     </>
   );

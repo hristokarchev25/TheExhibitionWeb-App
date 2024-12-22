@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { db } from '../../utils/firebase';
+import { Link } from 'react-router-dom';
 import "./ArtShop.css";
 
 function ArtShop() {
@@ -43,7 +44,7 @@ function ArtShop() {
                                     <div class="fw-bold">By: {post.artistName}</div>
                                     {post.price}
                                     <div class="mt-3">
-                                        <a href={post.key} class="btn btn-primary">View Options</a>
+                                        <Link to={`/artShop/shopItem/${post.key}`} class="btn btn-primary">View Options</Link>
                                     </div>
                                 </div>
                             </div>
