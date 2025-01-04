@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-//import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { db } from '../../utils/firebase';
 import "./Questions.css";
 
@@ -55,7 +55,7 @@ function Questions() {
                     {showScore ? (
                         <div className='score__section'>
                             You scored {score} out of {questions.length}
-                            <a href="/artQuiz"><button className="button-style">Try again?</button></a>
+                            <Link to="/"><button className="button-style">Home page</button></Link>
                         </div>
                     ) : (
                         <>
