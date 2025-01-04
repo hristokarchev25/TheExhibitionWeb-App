@@ -4,6 +4,7 @@ import suzanneImg from '../../assets/suzanne.jpg';
 import guernicaImg from '../../assets/pg.webp';
 import farmImg from '../../assets/The-Farm.jpg';
 import adamEveImg from '../../assets/adameve.jpg';
+import quizImg from '../../assets/quiz.jpg'
 
 
 
@@ -62,4 +63,14 @@ export const adamAndEveObj = {
     image: adamEveImg,
     descriptionParahraph: 'This painting was made during a highly productive period for Valadon when she had just met the young André Utter. She had fallen in love again and as such felt a surge in creativity and began to paint rather than draw much more. The nearly life-sized painting depicts Valadon as Eve and Utter as Adam, the original lovers in the paradise of the Garden of Eden. The painting was originally completed without the leaves covering Utter’s genitals, but they were added later in order to avoid scandal and to enable exhibition of the work in the Salon of 1920.',
     descriptionParahraphTwo: 'This was the first painting in which Valadon placed her subjects in an outdoor rather than interior setting. It was also the first painting exhibited by a female artist to show a nude man and woman together, and not merely any man or woman, but the artist and her lover (albeit in the guise of religious art). As Hewitt writes, “For a woman to paint a nude heterosexual couple showed extraordinary daring; it was simply not done.” The piece was audacious on a personal level too. The figures poised on the precipice of sin, with Eve/Valadon reaching for the apple, their naked bodies already entwined. Valadon may be referencing her own relationship here - that of an older woman and much younger man - he as the forbidden fruit, and she, with the confidence to take him.'
+};
+
+export const quizInfoObj = {
+    id: 'quiz',
+    nameOfPage: 'Art Quiz',
+    subtitle: 'About the Art Quiz',
+    image: quizImg,
+    descriptionParahraph: 'Welcome to the Art Quiz! Whether you\'re an art aficionado or a casual observer, this quiz is designed to test and expand your knowledge of the world of art. Our quiz covers a wide array of topics, including famous artists, iconic art movements, techniques, and the stories behind legendary works of art.',
+    descriptionParahraphTwo: 'Dive into questions about the most celebrated painters and sculptors, the evolution of artistic styles, and the significance of various art forms. Challenge yourself and see how well you know the artists who shaped our world and the art that has left a lasting impact on history.',
+    descriptionParahraphThree: 'So, whether you\'re competing with friends or testing your own artistic knowledge, the Art Quiz offers a fun and interactive way to learn more about the world of visual expression. Ready to put your art knowledge to the test? Let\'s get started!'
 };

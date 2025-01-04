@@ -2,8 +2,17 @@ import React, { useEffect, useState } from "react";
 import { db } from '../../utils/firebase';
 import { Link } from 'react-router-dom';
 import "./ArtShop.css";
+/* import Form from 'react-bootstrap/Form'; */
 
 function ArtShop() {
+
+ /*    const [search, setSearch] = useState('');
+
+
+    const onSearchFunction = (e) => {
+        console.log(e);
+    }
+ */
     const [posts, setPosts] = useState([]);
     const [loading, setLoading] = useState(true);
 
@@ -32,6 +41,11 @@ function ArtShop() {
     return (
         <div class="container mt-4 mb-4">
             <div class="row row-cols-2 row-cols-md-3 row-cols-xl-4 g-4 justify-content-center mt-2">
+               {/*  <Form.Control
+                    onChange={(e) => setSearch(onSearchFunction(e.target.value.toLowerCase()))}
+                    type="text"
+                    placeholder="Search for a product"
+                /> */}
                 {posts.length > 0 ? (
                     posts.map((post) =>
                         <div class="col">
