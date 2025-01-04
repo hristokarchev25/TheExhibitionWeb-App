@@ -10,6 +10,7 @@ import PabloDetailsPage from "./pages/PabloDetailsPage";
 import SuzanneDetailsPage from "./pages/SuzanneDetailsPage";
 import JoanDetailsPage from "./pages/JoanDetailsPage";
 import ShopDetailsPage from "./pages/ShopDetailsPage";
+import QuizPage from "./pages/QuizPage";
 import './App.css';
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
         <Route path="/suzannePage/suzanneCollection/:suzanneId" element={<SuzanneDetailsPage />} />
         <Route path="/joanPage/joanCollection/:joanId" element={<JoanDetailsPage />} />
         <Route path="/artShop/shopItem/:shopId" element={<ShopDetailsPage />} />
+        <Route path="/artQuiz" element={<QuizPage />} />
       </Routes>
     </>
   );
