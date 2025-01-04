@@ -40,13 +40,13 @@ function Navigation({ email, isAuth }) {
                             <Link to="/pabloPage">Pablo Picasso</Link>
                             <Link to="/suzannePage">Suzanne Valadon</Link>
                             <Link to="/joanPage">Joan Miro</Link>
-                            <Link to="/artQuiz">Art Quiz</Link>
                             <Link to="/artShop">Art Shop</Link>
                             {!isAuth ?
                                 (
                                     <Link to="/joinUs">Join Us</Link>
                                 ) : (
                                     <>
+                                        <Link to="/artQuiz">Art Quiz</Link>
                                         <Link to="#"> Welcome, {email}</Link>
                                         <Link to='#' onClick={doSignOut}>Log Out</Link>
                                     </>
