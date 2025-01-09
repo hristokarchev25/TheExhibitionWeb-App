@@ -31,7 +31,7 @@ function JoinUs() {
             .then((userCredential) => {
                 location('/');
             })
-            .catch(err => console.log(err));
+            .catch(err => alert("Incorrect Email or Password! Double-check your email and password, and try again."));
     };
 
     return (

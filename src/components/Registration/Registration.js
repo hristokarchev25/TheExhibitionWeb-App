@@ -31,7 +31,7 @@ function Registration() {
             .then(userCredential => {
                 location('/joinUs');
             })
-            .catch(err => console.log(err));
+            .catch(err => alert("Weak Password: Password should be at least 6 characters"));
     }
 
 
