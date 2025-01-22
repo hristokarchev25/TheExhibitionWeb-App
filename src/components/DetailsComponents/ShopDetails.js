@@ -36,6 +36,8 @@ function ShopDetails() {
                     </Col>
                     <Col className='info-paragraph' sm={6}>
                         <p>By: {product.artistName}</p>
+                        <p>{product.descriptionParagraph}</p>
+                        <p>{product.descriptionParagraphTwo}</p>
                     </Col>
                 </Row>
             </Container>
